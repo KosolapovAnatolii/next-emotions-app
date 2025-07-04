@@ -11,7 +11,6 @@ export class UserStore {
 
   constructor() {
     makeAutoObservable(this)
-    // this.loadEmotionsFromStorage()
   }
 
   openEmotionModal() {
@@ -40,6 +39,21 @@ export class UserStore {
 
   saveEmotionsToStorage() {
     localStorage.setItem(EMOTIONS_STORAGE_KEY, JSON.stringify(this.emotionsList))
+  }
+
+  reorderEmotions(newOrder: Emotion[]) {
+    this.emotionsList = newOrder
+    this.saveEmotionsToStorage()
+  }
+
+  removeEmotion(emotionId: string) {
+    this.emotionsList = this.emotionsList.filter(emotion => emotion.id !== emotionId)
+    this.saveEmotionsToStorage()
+  }
+
+  clearEmotionsList() {
+    this.emotionsList = []
+    this.saveEmotionsToStorage()
   }
 }
 

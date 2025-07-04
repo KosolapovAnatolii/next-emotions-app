@@ -3,14 +3,14 @@ import { ReactNode } from 'react'
 
 interface ButtonProps {
   type?: ButtonType
-  style: ButtonStyle
+  style?: ButtonStyle
   handleClick?: () => void
   children: ReactNode
 }
 
 export default function CustomButton({
   type = ButtonType.BRUTTON,
-  style,
+  style = ButtonStyle.PRIME,
   handleClick,
   children
 } : ButtonProps) {

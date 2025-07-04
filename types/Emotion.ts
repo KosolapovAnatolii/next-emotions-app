@@ -13,3 +13,4 @@ export enum EmotionName {
   Excited = 'excited',
   Calm = 'calm',
 }
+
