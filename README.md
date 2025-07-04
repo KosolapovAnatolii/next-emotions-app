@@ -1,36 +1,46 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Next Emotions
 
-## Getting Started
+**Next Emotions** is a simple web application that allows users to record and visualize their emotions. Built with **Next.js**, **TypeScript**, and **Tailwind CSS**, it provides an interactive and responsive experience, including drag-and-drop sorting and swipe-to-delete functionality on mobile devices.
+**TS** - of course
+---
 
-First, run the development server:
+## 🔗 Demo
+
+[View Live Demo](https://next-emotions-lic62rp3v-anatoliis-projects-c52cff8b.vercel.app/)
+
+## 🚀 Getting Started
+
+### ✅ Prerequisites
+
+- **Node.js v18** (recommended)
+- **npm** or **yarn**
+
+### 🔧 Installation
+
+Clone the repository and install the dependencies:
 
 ```bash
+git clone https://github.com/your-username/next_emotions.git
+cd next_emotions
+npm install
+# or
+yarn install
+
 npm run dev
 # or
 yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 📦 Frameworks and Tools
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+| Library / Tool                                 | Description                                                             |
+|------------------------------------------------|-------------------------------------------------------------------------|
+| [**Next.js**](https://nextjs.org)              | React framework for building fullstack web apps with SSR and routing   |
+| [**TypeScript**](https://www.typescriptlang.org) | Typed superset of JavaScript                                           |
+| [**Tailwind CSS**](https://tailwindcss.com)    | Utility-first CSS framework for fast UI styling                        |
+| [**MobX**](https://mobx.js.org)                | State management library for managing and reacting to app state        |
+| [**@dnd-kit**](https://dndkit.com/)            | Drag-and-drop utilities for sorting emotion cards                      |
+| [**react-swipeable**](https://github.com/FormidableLabs/react-swipeable) | Swipe gesture support for mobile interactions                          |
+| [**FontAwesome**](https://fontawesome.com)     | Icon library used for emotion symbols and action buttons               |
+| [**nanoid**](https://github.com/ai/nanoid)     | Lightweight and secure ID generator                                   |
+| [**clsx**](https://github.com/lukeed/clsx)     | Utility for conditionally combining Tailwind class names               |
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
